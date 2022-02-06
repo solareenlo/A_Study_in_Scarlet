@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ローリストン・ガーデンの謎 - 緋色の習作</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="../src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Home</a></li><li class="chapter-item expanded affix "><li class="part-title">第1部. 元陸軍医務局のジョーン・H・ワトソン医学博士の回想録からの復刻版</li><li class="chapter-item expanded "><a href="../part1/mr_sherlock_holmes.html"><strong aria-hidden="true">1.</strong> MR. シャーロック・ホームズ</a></li><li class="chapter-item expanded "><a href="../part1/the_science_of_deduction.html"><strong aria-hidden="true">2.</strong> 推理の科学</a></li><li class="chapter-item expanded "><a href="../part1/the_lauriston_garden_mystery.html" class="active"><strong aria-hidden="true">3.</strong> ローリストン・ガーデンの謎</a></li><li class="chapter-item expanded "><a href="../part1/what_john_rance_had_to_tell.html"><strong aria-hidden="true">4.</strong> ジョン・ランスが語ったこと</a></li><li class="chapter-item expanded "><a href="../part1/our_advertisement_brings_a_visitor.html"><strong aria-hidden="true">5.</strong> 広告を見てやってきた訪問者</a></li><li class="chapter-item expanded "><a href="../part1/tobias_gregson_shows_what_he_can_do.html"><strong aria-hidden="true">6.</strong> トビアス・グレグソンが見せた実力</a></li><li class="chapter-item expanded "><a href="../part1/light_in_the_darkness.html"><strong aria-hidden="true">7.</strong> 暗闇の中の光</a></li><li class="chapter-item expanded affix "><li class="part-title">第2部. 聖者たちの国</li><li class="chapter-item expanded "><a href="../part2/on_the_great_alkali_plain.html"><strong aria-hidden="true">8.</strong> アルカリ性の大平原で</a></li><li class="chapter-item expanded "><a href="../part2/the_flower_of_utah.html"><strong aria-hidden="true">9.</strong> ユタの花</a></li><li class="chapter-item expanded "><a href="../part2/john_ferrier_talks_with_the_prophet.html"><strong aria-hidden="true">10.</strong> ジョン・フェリエ、預言者と語る</a></li><li class="chapter-item expanded "><a href="../part2/a_flight_for_life.html"><strong aria-hidden="true">11.</strong> 人生を賭けたフライト</a></li><li class="chapter-item expanded "><a href="../part2/the_avenging_angels.html"><strong aria-hidden="true">12.</strong> 復讐の天使</a></li><li class="chapter-item expanded "><a href="../part2/a_continuation_of_the_reminiscences_of_john_watson_md.html"><strong aria-hidden="true">13.</strong> ジョン・ワトソン医学博士の回想録の続き</a></li><li class="chapter-item expanded "><a href="../part2/the_conclusion.html"><strong aria-hidden="true">14.</strong> 結末</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">緋色の習作</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/A_Study_in_Scarlet" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/A_Study_in_Scarlet/edit/main/src/part1/the_lauriston_garden_mystery.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="3-ローリストンガーデンの謎"><a class="header" href="#3-ローリストンガーデンの謎">3. ローリストン・ガーデンの謎</a></h1>
+<p>正直なところ、私は、ホームズの理論の実用性を新たに証明するこの言葉に、かなり驚かされた。彼の分析力に対する尊敬の念は、不思議なほど強まった。しかし、私の心の中には、この出来事はすべて、私を驚かすためにあらかじめ仕組まれたエピソードではないかという疑念が残っていた。しかし、彼が一体何の目的でそんなことをするのか、私には理解できなかった。しかし、私が彼を見たとき、彼はメモを読み終えていて、その目は精神的な抽象度を示す、空虚で乏しい表情になっていた。</p>
+<p>「いったいどうやって推理したんだ？」私はそう尋ねた。</p>
+<p>「何を推理するんだ？」と彼は小馬鹿にしたように言った。</p>
+<p>「なぜ、彼が海兵隊の元軍曹だったかさ。」</p>
+<p>「つまらないことに付き合っている暇はないんだ」と彼は無愛想に答え、それから微笑んで言った。「失礼をお詫びするよ。君は私の思考の糸を断ち切ったのだ。でも、それはそれでいいのかもしれない。では、君はあの男が海兵隊の軍曹であることを見抜けなかったのかい？」</p>
+<p>「うん、全く。」</p>
+<p>「なぜそうなのかを説明するよりも、それを知っていることの方が簡単だ。2と2が4を作ることを証明せよと言われたら、少し難しいかもしれないが、それでも君はその事実をはっきりと確信しているのだ。通りの向こう側からでも、彼の手の甲に大きな青い錨の刺青があるのが見えた。そこから海の香りがした。また一方、彼は軍用馬車を持っていて、規定の横ひげを生やしていた。海兵隊員だ。それなりの自尊心と命令口調のある男だった。君も彼が頭を下げたり、杖を振ったりしているのを見たはずだ。見た目もしっかりした、立派な中年男性で、彼が軍曹だったことを信じさせるような事実ばかりだった。」</p>
+<p>「素晴らしい！」と私は突然叫んだ。</p>
+<p>「ありふれたことだ」とホームズは言ったが、その表情から、私が明らかに驚き、感心していることを喜んでいるように思えた。「先ほど犯罪者はいないと申し上げた。どうやら私が間違っているようだ、これを見てくれ！」彼は仲介人が持ってきたメモを私に手渡した。</p>
+<p>「これはひどい！」と私は目を走らせながら叫んだ。</p>
+<p>「ちょっと普通とは違うような気がする」と彼は穏やかに言った。「声に出して読んでいただけませんか？」</p>
+<p>以下は、私が彼に読んだ手紙である。</p>
+<blockquote>
+<p>親愛なるシャーロック・ホームズ様</p>
+<p>拝啓</p>
+<p>ブリクストン通り沿いのローリストン・ガーデン3番地で、夜間に悪い事件があったそうです。夜中の2時頃、パトロール中の男がそこに明かりがあるのを見て、誰もいない家だったので、何か問題があるのではと思いました。彼はドアが開いているのを見つけ、家具のない玄関で、よく服を着た紳士の死体を発見し、ポケットには「アメリカ合衆国オハイオ州クリーブランド市　イーノック・J・ドレバー」と書かれたカードが入っていました。強盗はいなかったし、この男がどうやって死んだかについての証拠もありません。部屋には血の跡があるが、体には傷がありません。どうやってこの空き家に入ったのか、実に不可解な事件です。12時前に家に来てくれれば、私はそこにいます。私はあなたから連絡があるまで、すべてを現状維持のままにしておきます。もしあなたが来られないのであれば、もっと詳しいことをお話ししますし、あなたのご意見をお聞かせいただければ幸いです。</p>
+<p>敬具</p>
+<p>トビアス・グレグソン</p>
+</blockquote>
+<p>「グレグソンはスコットランドヤードの警官の中で一番賢い。」と私の友人は言った。「彼とレストレードは悪い連中の中では選り抜きだ。二人とも素早くて精力的だが、型にはまったやり方をしていて、あきれるほどだ。二人は互いにナイフを突きつけ合っている。プロの美女コンビのような嫉妬深さでだ。2人とも嗅ぎつけられたら、この事件は面白いことになりそうだ。」</p>
+<p>私は、彼の波打つような冷静さに驚かされた。
+「一刻の猶予もない」、と私は叫んだ。「辻馬車を呼ぼうか？」</p>
+<p>「行こうかどうか迷ってる。私は今まで靴の革の中に立っていた中で、最も不治の病にかかった怠け者の悪魔だ。つまり、私にフィットしている時には、十分に元気でいられる時がある。」</p>
+<p>「なぜ行かないんだ、これはまさに君が待ち望んでいたようなチャンスだ。」</p>
+<p>「親愛なる友よ、私にはどうでもよいことだ。仮に私が全部解明したとしてグレグソンとレストレードとその一味が手柄を全部横取りするのは確実だ。それは私が非公式な人物であることから来るものだ。」</p>
+<p>「しかし、彼はあなたに助けて欲しいと懇願している。」</p>
+<p>「そうさ。彼は私が自分より優れていることと知っていて、それを私に認めている。しかし、第三者にそれを認める前に、彼は自分の舌を切り取るだろう。しかし、行って見てみるのもいいかもしれない。私は自分の計略で解決することにしよう。他に何もなければ、彼らを笑うことができるかもしれない。さあ！」</p>
+<p>彼はオーバーコートを急いで着て、無気力な状態からエネルギッシュな状態に変わったことを示すように、忙しそうに動き回った。</p>
+<p>「君も帽子を取れ」と彼は言った。</p>
+<p>「来いというのか？」</p>
+<p>「そう、他にすることがなければね。」1分後、私たちは辻馬車に乗り込み、ブリクストン通りに向かって猛スピードで走った。</p>
+<p>その朝は霧が立ちこめ、薄暗いベールが家々の屋根にかかり、まるでその下にある泥色の街並みが映り込んでいるように見えた。私の友人は、クレモナのバイオリンや、ストラディバリウスとアマティの違いについて、とても元気よく話してくれた。私はといえば、退屈な天気と憂鬱な仕事のせいで、気が滅入ったので、黙っていた。</p>
+<p>「君は、この問題についてあまり考えていないようだね」私は、ホームズの音楽談義を遮って言った。</p>
+<p>「まだデータはない」と彼は答えた。「証拠が揃わないうちに理論武装するのは大間違いだ。判断が偏ってしまう。」</p>
+<p>「もうすぐデータが手に入るよ」私は指で指しながら、そう言った。「ここがブリクストン通りで、あれが問題の家だ、間違ってなければ。」</p>
+<p>「そう、あの家だ。ストップ、馭者、ここで降ろしてくれ！」まだ100ヤードほど先だったが、しかし、彼がどうしても降りたいというので、私たちは残りの旅路を徒歩で終えた。</p>
+<p>ローリストン・ガーデンズの3番は、悪趣味で小汚い外観をしていた。通りから少し奥まったところにある4軒のうちの1軒で、2軒は入居中、2軒は空き家だった。後者の窓からは、3段になった哀愁漂う空き窓が見え、その窓のあちこちに「貸家」のカードが瀑布のように広がっている以外は、何もなく殺風景である。病的な植物が散乱している小さな庭が、これらの家を通りから隔てており、黄色がかった、明らかに粘土と砂利の混合物でできている細い小道が横切っていた。一晩中降り続いた雨のせいで、全体がドロドロになっている。庭は3フィートのレンガの壁で囲まれていて、その上には木の手すりがついていた。この壁には、頑丈な巡査が寄りかかっていて、それを小さな野次馬たちが囲んでいた。彼らは首をかしげて目を凝らし、中の様子を垣間見ようと無駄な期待をしていた。</p>
+<p>私は、シャーロック・ホームズならすぐにでも家に入り、謎の研究に没頭するだろうと想像していた。しかし、彼の思惑とは全く違っていた。この状況下で、私には気取ってるとしか思えないほど平然とした態度で、彼は歩道を行ったり来たりして、地面や空、向かいの家や手すりの列をぼんやりと眺めた。詮索を終えると、彼はゆっくりと小道を、いや、小道の脇にある草の縁を下りて、目を地面に釘付けにしたまま進んでいった。二度ほど立ち止まり、一度は微笑み、満足げに声を上げるのを見た。湿った粘土質の土の上にはたくさんの足跡があったが、警察がその上を行ったり来たりしていたので、私の同行者がそこから何かを得ようとすることはできなかった。しかし、私は彼の知覚の速さの異常な証拠を見ていたので、彼は私に隠れている多くのものを見ることができると信じて疑わなかった。</p>
+<p>家の入り口で、ノートを手にした背の高い、白い顔の、亜麻色の髪の男が出迎えてくれた。彼はあわてて前に出て、私の友の手を力いっぱい握った。「よくぞ来てくださいました」と彼は言った。「すべて手付かずのままにしてもらいました。」</p>
+<p>「あれを除いてね！」と友人は答え、通路を指差した。「もし水牛の群れが通り過ぎても、これ以上の混乱はないだろう。しかし、これを許可する前に、グレグソン、君は自分なりの結論を出していたことは間違いないだろう。」</p>
+<p>「私は家の中でやることがたくさんありましてね」警部は回避するように言った。「同僚のレストレード氏が来ています。この件は彼に任せていたのですが......」と言い訳した。</p>
+<p>ホームズは私をちらりと見て、無遠慮に眉をひそめながら言った。「君とレストレードのような二人が現場にいれば、第三者が発見することはあまりないだろう」と彼は言った。</p>
+<p>グレグソンは満足そうに両手をこすりつけた。「できることはすべてやったと思います」と彼は答えた。「しかし、これは奇妙な事件であり、ホームズさん好みの事件だと思いまして。」</p>
+<p>「君はタクシーで来たんじゃないのか？」とシャーロック・ホームズが聞いた。</p>
+<p>「いいえ、そうではありません。」</p>
+<p>「レストレードも？」</p>
+<p>「はい、彼もです。」</p>
+<p>「それなら部屋を見てみよう。」そう言って彼は家の中に入っていき、グレグソンもそれに続いたが、その顔には驚きが表れていた。</p>
+<p>板がむき出しで埃っぽい短い通路が、台所と事務所につながっていた。そこから左右に2つのドアが開いている。そのうちの1つは明らかに何週間も前から閉じられていた。もう1つはダイニングルームのもので、謎の事件が起こった部屋である。ホームズは中に入り、私は死がもたらす沈痛な思いを胸に、彼の後を追った。</p>
+<p>大きな四角い部屋で、家具が一切ないため、より大きく見えた。壁には下品なはたき紙が貼られていたが、ところどころカビで滲んでおり、あちこちが剥がれて垂れ下がり、下の黄色い漆喰が露出している。ドアの反対側には、白大理石を模したマントルピースの上に、派手な暖炉が置かれており、その片隅には、赤い蝋燭の切り株が刺さっていた。一枚だけある窓はとても汚れていて、光は霞んでいて不確かで、埃が部屋全体を覆っているため、すべてが鈍い灰色を帯びていた。</p>
+<p>これらの詳細は、すべて後から観察したものである。今、私の関心は、板の上に横たわり、変色した天井を見上げる虚ろな目をした、一人の重苦しい動かない人物に向けられていた。それは43歳か44歳くらいの男で、中肉中背、肩幅が広く、カールした黒髪に短い無精髭を生やしていた。重厚なブロードクロスのフロックコートとウエストコートを着て、明るい色のズボンをはき、襟とカフスは完璧であった。よく手入れされた帽子も床の上に置かれている。両手は握りしめられ、両腕を広げ、下肢はまるで死闘の末のように組み合わされていた。その硬直した顔には、人間の顔では見たこともないような恐怖と、私には憎悪の表情が浮かんで見えた。この悪意に満ちた恐ろしい歪みと、低い額、鈍い鼻、前突した顎とが相まって、死者は奇妙なほど類人猿のように見え、それが身動きの取れない不自然な姿勢によって、さらに強調されたのであった。私はさまざまな形で死を見たが、ロンドン郊外の大動脈に面したあの暗い薄汚れたアパートほど、死が恐ろしい姿で私に現れたことはなかった。</p>
+<p>レストレードは相変わらず痩身でフェレットのような体つきで、玄関の脇に立っていて、私と連れを出迎えた。</p>
+<p>「この事件は世間を騒がせるでしょうね」と彼は発言した。「私は臆病者ではありませんが、これは私が見たどんな事件よりも理解に苦しみます。」</p>
+<p>「手がかりはないのか？」とグレグソンは言った。</p>
+<p>「全くない」とレストレードが答えた。</p>
+<p>シャーロック・ホームズは死体に近づくと、膝をついて熱心に調べた。「外傷は本当にないのですか？」彼は、辺り一面に広がる無数の血の塊を指差して聞いた。</p>
+<p>「間違いない！」と二人の警部が叫んだ。</p>
+<p>「となると、もちろん、この血は第二の人物のものであり、殺人が行われたのであれば、おそらく殺人者のものである。34年にユトレヒトで起きたバン・ヤンセンの死を連想させる。その事件を憶えているかね、グレグソン？」</p>
+<p>「覚えてません。」</p>
+<p>「ちゃんと読むべきだよ。この世の中に新しいものは何もない。すべて以前から行われていたことだ。」</p>
+<p>その時、彼の軽快な指はあちこちに飛び、触ったり、押したり、ボタンを外したり、調べたり、その目は先に述べたような遠くを見るような表情をしていた。そのため、検査は非常に迅速に行われ、その細かさは想像を絶するものであった。最後に、彼は死んだ男の唇の匂いを嗅ぎ、エナメル革のブーツの底をちらっと見た。</p>
+<p>「彼は全く動かしていないのですね？」と彼は尋ねた。</p>
+<p>「検査のために必要な以上のことはしていません。」</p>
+<p>「もう霊安室に連れて行っていいよ」と彼は言った。「これ以上、学ぶことはない。」</p>
+<p>グレグソンは担架と4人の部下を用意していた。彼の呼びかけで彼らは部屋に入り、見知らぬ男は持ち上げられて運び出された。彼を抱き上げると、指輪がチリンチリンと音を立てて床を転がり落ちた。レストレードはそれを拾い上げ、不思議そうな目で見つめた。</p>
+<p>「ここには女性がいたんだ」と彼は叫んだ。「女性の結婚指輪だ。」</p>
+<p>彼はそれを手のひらにのせて話した。私たちは皆、彼の周りに集まって、それを見つめた。その金色の輪は、かつて花嫁の指を飾っていたものであることは疑いようがなかった。</p>
+<p>「これは問題を複雑にしている」とグレグソンは言った。「天の知るところ、以前から十分に複雑だった。」</p>
+<p>「本当に簡略化されていないのか？」ホームズが疑問を投げかけた。「これを見つめても何もわからないよ。彼のポケットから何か見つかりましたか？」</p>
+<p>「ここに全部ありますよ」グレッグソンは階段の下の段に置かれた品々を指差した。「ロンドンのバロー社の金時計、製品番号97163。金のアルバート・チェーン、非常に重く頑丈。金の指輪、メーソン装置付き。金のピンバッジ、目にルビーがはまったブルドッグの頭がついている。ロシアの革製カードケース、クリーブランド市エノク・J・ドレバーの名刺が入っており、リネンシャツの E. J. D. と一致。財布はないが7ポンド13セントの小銭ある。ボッカチオの『デカメロン』のポケット版、見返しにジョセフ・スタンガーソンの署名入り。手紙2通、E. J. ドレバーとジョセフ・スタンガーソンに宛てたもの。」</p>
+<p>「どこの住所で？」</p>
+<p>「ストランドにあるアメリカ両替所留めで、いずれもギオン蒸気船会社のもの。リバプールからの出航の日程を指しています。この不幸な男がニューヨークに戻ろうとしていたことは明らかです。」</p>
+<p>「このスタンガンという男について何か問い合わせたことは？」</p>
+<p>「すぐにやりましたよ」とグレグソンは言った。「すべての新聞に広告を出させましたし、部下の一人はアメリカ両替所に行きましたが、まだ帰ってきていません」。</p>
+<p>「クリーブランドには送りましたか？」</p>
+<p>「今朝、電報を打ちました。」</p>
+<p>「問い合わせの言葉はどうしましたか？」</p>
+<p>「私たちはただ、状況を詳しく説明し、そして、『何か情報があれば、ぜひ教えてください』と言いました。」</p>
+<p>「重要だと思われる点について、具体的な説明を求めなかったのですか？」</p>
+<p>「スタンガンについて尋ねました。」</p>
+<p>「他にないのか？この事件全体を左右するような事情はないのですか？また電報を打たないのか？」</p>
+<p>「言うべきことはすべて言いました」とグレグソンは怒ったような声で言った。</p>
+<p>シャーロック・ホームズがくすくす笑って何か言おうとしたとき、私たちが広間でこの会話をしている間、玄関にいたレストレードが、尊大で自己満足的な態度で手をこすりながら再び登場した。</p>
+<p>「グレグソン、」と彼は言った。「私は今、最も重要な発見をした。壁を注意深く調べなければ、見過ごされていたかもしれない発見だ。」</p>
+<p>その時、小さな男は目を輝かせ、同僚に勝てた喜びをかみしめていた。</p>
+<p>「こっちへ来てください、」と彼は言った。その部屋の雰囲気は、その惨めな住人がいなくなってから、空気が澄んでいるように感じられた。「さあ、そこに立ってみてください！」</p>
+<p>彼はブーツでマッチを擦り、壁にかざした。</p>
+<p>「見てください！」と勝ち誇ったように彼は言った。</p>
+<p>紙が部分的に剥がれ落ちていることは前述した。この部屋の隅では、大きな紙片が剥がれ落ちて、黄色い四角い粗い漆喰の跡が残っていた。この裸の空間に、血のように赤い文字で一つの文字が書き込まれていた。</p>
+<p align="center">
+RACHE.
+</p>
+<p>「どうです、これ？」警部は、まるで興行師のような顔で叫んだ。「これは部屋の一番暗い隅にあったので見落とされ、誰もそこを見ようとは思わなかったのです。犯人は自分の血でそれを書いたのだ。見てください、この壁を伝って流れ落ちる血の跡を！これで、自殺という考えはなくなった。なぜあの角が選ばれたのか？教えてあげましょう。暖炉の上の蝋燭を見てください。当時は灯りがついていました。もし灯りがついていたなら、この角は壁の一番暗いところではなく、一番明るいところになるはずです。」</p>
+<p>「そして、それを見つけた今、どんな意味があるのか？」と、グレグゾンは憂鬱そうな声で尋ねた。</p>
+<p>「どういう意味があるかって？なぜかというと、これを書いた人物は女性の名前 Rachel を入れるつもりだったが、書き終える前に邪魔が入ったということだ。よく覚えておいてください。この事件が解明されるとき、レイチェルという女性が関係していることがわかるでしょう。笑うのは結構ですが、シャーロック・ホームズさん。あなたはとても頭が良くて賢いかもしれませんが、結局のところ、古い猟犬が一番なんです。」</p>
+<p>「本当に申し訳ございませんでした！」と私の友が言った。その時、彼は爆笑してこの小男の機嫌を損ねた。「このことを最初に発見したのは、確かにあなたの功績です。そして、あなたが言うように、これは昨夜のミステリーのもう一人の参加者が書いたものであることを示す痕跡です。私はまだこの部屋を調べる時間がありませんでしたが、あなたの許可を得てこれから調べます。」</p>
+<p>ポケットから巻き尺と大きな丸い虫眼鏡を取り出しながら、彼はこう言った。この二つの道具を持って、音もなく部屋を歩き回り、時には立ち止まり、時には膝をつき、時には顔を伏せて寝転んだ。彼は自分の仕事に没頭し、私たちの存在を忘れているようだった。彼はずっと息を殺して独り言を言い続け、感嘆の声、うめき声、口笛、励ましや希望を示唆する小さな叫びを連発した。その姿を見ていると、純血でよく訓練されたフォックスハウンドが、見失った匂いを見つけるまで、熱心に鳴きながら茂みの中を行ったり来たりしている姿が無性に目に浮かんでくる。20分以上も調査を続け、私には全く見えない痕跡の間の距離を細心の注意を払って測り、時には巻き尺を壁に貼って、同様に理解不能な方法で調査を続けた。あるところでは、床に落ちている灰色のほこりを丁寧に集めて、封筒に詰めていた。最後に、彼は壁に書かれた文字を虫眼鏡で調べ、その一文字一文字を丹念に見ていった。これで満足したようで、巻き尺と虫眼鏡をポケットにしまった。</p>
+<p>「天才とは、無限の苦悩に耐えうる能力である」と、彼は微笑みながら言った。「それは非常に悪い定義だが、探偵の仕事には当てはまる。」</p>
+<p>グレグソンとレストレードは、素人の友の作戦を、かなりの好奇心と多少の軽蔑をもって眺めていた。シャーロック・ホームズの小さな行動は、すべて明確で実用的な目的に向けられているという、私が気づき始めていた事実を、彼らは明らかに理解していなかったのである。</p>
+<p>「どうですか、先生？」と二人が聞いてきた。</p>
+<p>「もし私があなたを助けるとしたら、それはあなたの信用を奪うことになるでしょう」と友人は言った。「あなたは今とてもうまくいっているので、誰かが邪魔をするのはかわいそうなことです。」彼の話す声には皮肉の世界が広がっていた。「もし、調査の結果を教えてくれるなら」と彼は続けた。「できる限りお手伝いさせていただきます。とりあえず、死体を発見した警官と話をしたいな。彼の名前と住所を教えてください。」</p>
+<p>レストレードはメモ帳に目をやった。「ジョン・ランス」と彼は言った。「彼は今非番です。ケニントン公園通りのオードリー・コート46番地にいます。」</p>
+<p>ホームズは、その住所をメモした。</p>
+<p>「ドクター、一緒に来てください」と彼は言った。
+「彼を探しに行こう。この事件で役に立つかもしれないことを一つ教えよう」彼は続けて二人の警部に向き直った。
+「殺人が行われ、その犯人は男だった。身長は180センチ以上あり、働き盛りで、身長の割に足が小さく、つま先の粗い角張ったブーツを履き、トリシノポリの葉巻を吸っていた。彼は被害者を連れて四輪の辻馬車でここに来たが、その辻馬車は、3つの古い蹄鉄と前脚に1つ新しい蹄鉄を履いた馬に引かれていた。おそらく、犯人は赤らんだ顔をしていたのだろう。そして、右手の指の爪がやたらと長かった。これらはわずかな証拠に過ぎないが、あなた方のお役に立つかもしれない。」</p>
+<p>レストレードとグレグソンは懐疑的な笑みを浮かべながら、互いにチラリと見合った。</p>
+<p>「この男が殺されたのなら、どうやって殺されたのでしょうか？」と前者は尋ねた。</p>
+<p>「毒だ」とシャーロック・ホームズは素っ気なく言い、さっさと立ち去った。「それと、もう1つ、レストレード」彼はドアの所で振り返り、付け加えた。
+「『Rache』はドイツ語で『復讐』だ。だからレイチェル嬢を探すのに時間をかけないこと。」</p>
+<p>別れ際に彼はそう言って、二人のライバルが口をあけているのを尻目に立ち去った。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part1/the_science_of_deduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../part1/what_john_rance_had_to_tell.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part1/the_science_of_deduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../part1/what_john_rance_had_to_tell.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="../src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>
